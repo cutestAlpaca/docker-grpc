@@ -1,0 +1,17 @@
+2022/04/06 21:23:56 [emerg] 1#1: no "events" section in configuration
+2022/04/06 21:26:35 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2022/04/06 21:28:35 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2022/04/06 21:30:15 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2022/04/06 21:31:59 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2022/04/06 21:32:19 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2022/04/06 21:37:29 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2022/04/06 21:37:53 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2022/04/06 21:40:18 [emerg] 1#1: getpwnam("www") failed in /etc/nginx/nginx.conf:1
+2022/04/06 21:40:40 [emerg] 1#1: open() "/usr/local/webserver/nginx/logs/nginx_error.log" failed (2: No such file or directory)
+2022/04/06 21:41:00 [emerg] 1#1: open() "/usr/local/webserver/nginx/nginx.pid" failed (2: No such file or directory)
+2022/04/06 21:41:23 [error] 23#23: *2 directory index of "/usr/share/nginx/html/" is forbidden, client: 192.168.255.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2022/04/06 21:41:24 [error] 23#23: *2 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.255.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2022/04/07 14:08:44 [error] 22#22: *1 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.255.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2022/04/09 09:15:16 [error] 25#25: *2 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.255.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2022/04/16 09:45:44 [error] 22#22: *2 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.254.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2022/05/19 18:17:23 [emerg] 1#1: host not found in upstream "docker-go" in /etc/nginx/nginx.conf:58

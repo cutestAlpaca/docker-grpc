@@ -1,0 +1,6 @@
+port: "8081"
+loginuser:
+- password: "123456"
+  username: admin
+daemonpath: /etc/docker/daemon.json
+dockerhubuser: []

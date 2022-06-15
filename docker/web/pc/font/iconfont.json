@@ -1,0 +1,205 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2302518",
+      "name": "总览",
+      "font_class": "fangwencelue",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "2687058",
+      "name": "集群",
+      "font_class": "jiqun",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "2785376",
+      "name": "网络",
+      "font_class": "net",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "4508647",
+      "name": "CPU",
+      "font_class": "CPU",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    },
+    {
+      "icon_id": "4634705",
+      "name": "诊断",
+      "font_class": "zhenduan",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "4989966",
+      "name": "用户设置",
+      "font_class": "yonghushezhi",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "5057044",
+      "name": "内存条",
+      "font_class": "neicuntiao",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "6287922",
+      "name": "导入",
+      "font_class": "daoru",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "6474552",
+      "name": "导出",
+      "font_class": "daochu",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    },
+    {
+      "icon_id": "7270216",
+      "name": "数据卷",
+      "font_class": "shujujuan",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "7571234",
+      "name": "停止",
+      "font_class": "tingzhi",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "8314480",
+      "name": "日志 操作记录",
+      "font_class": "wulianwang-",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "8432791",
+      "name": "终止",
+      "font_class": "zhongzhi",
+      "unicode": "e7b2",
+      "unicode_decimal": 59314
+    },
+    {
+      "icon_id": "9880187",
+      "name": "添加",
+      "font_class": "add",
+      "unicode": "e6ac",
+      "unicode_decimal": 59052
+    },
+    {
+      "icon_id": "10354097",
+      "name": "命令行",
+      "font_class": "minglinghang",
+      "unicode": "e531",
+      "unicode_decimal": 58673
+    },
+    {
+      "icon_id": "11121382",
+      "name": "容器",
+      "font_class": "rongqi",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "11470119",
+      "name": "连接",
+      "font_class": "lianjie",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "11545489",
+      "name": "导入",
+      "font_class": "daoru1",
+      "unicode": "e525",
+      "unicode_decimal": 58661
+    },
+    {
+      "icon_id": "11572851",
+      "name": "镜像",
+      "font_class": "jingxiang",
+      "unicode": "e789",
+      "unicode_decimal": 59273
+    },
+    {
+      "icon_id": "12913020",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e684",
+      "unicode_decimal": 59012
+    },
+    {
+      "icon_id": "12964318",
+      "name": "导出",
+      "font_class": "daochu1",
+      "unicode": "e6fc",
+      "unicode_decimal": 59132
+    },
+    {
+      "icon_id": "13441539",
+      "name": "开始",
+      "font_class": "kaishi",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "13482756",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "13583680",
+      "name": "暂停 停止",
+      "font_class": "zantingtingzhi",
+      "unicode": "e5bb",
+      "unicode_decimal": 58811
+    },
+    {
+      "icon_id": "13614079",
+      "name": "重启",
+      "font_class": "zhongqi",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "13657661",
+      "name": "恢复",
+      "font_class": "huifu",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "13671647",
+      "name": "垃圾桶",
+      "font_class": "lajitong",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "13805107",
+      "name": "退出",
+      "font_class": "tuichu",
+      "unicode": "e710",
+      "unicode_decimal": 59152
+    }
+  ]
+}

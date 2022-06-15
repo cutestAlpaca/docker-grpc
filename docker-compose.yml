@@ -1,0 +1,96 @@
+version : '3'
+services:
+  docker-go:
+    container_name: docker-go
+    build:
+      context: ./docker/go
+    environment:
+      - TZ=PRC
+    ports:
+      - "8200"
+    depends_on:
+      - docker-mysql
+      - docker-redis
+      - docker-java
+    networks:
+      - docker-net
+  docker-java:
+    container_name: docker-java
+    build:
+      context: ./docker/java
+    environment:
+      - TZ=PRC
+    ports:
+      - "8080:8080"
+      - "999:999"
+    depends_on:
+      - docker-mysql
+    networks:
+      - docker-net
+  docker-mysql:
+    container_name: docker-mysql
+    restart: always
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./docker/mysql/conf:/etc/mysql/conf.d
+      - ./docker/mysql/logs:/logs
+      - ./docker/mysql/data:/var/lib/mysql
+    command: [
+        'mysqld',
+        '--innodb-buffer-pool-size=80M',
+        '--character-set-server=utf8mb4',
+        '--collation-server=utf8mb4_unicode_ci',
+        '--default-time-zone=+8:00',
+        '--lower-case-table-names=1'
+    ]
+    environment:
+      MYSQL_DATABASE: 'docker-mysql-db'
+      MYSQL_ROOT_PASSWORD: 123456
+    networks:
+      - docker-net
+  docker-redis:
+    container_name: docker-redis
+    image: redis:6.2.3
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./docker/redis/conf/redis.conf:/usr/local/etc/redis/redis.conf:rw
+      - ./docker/redis/data:/data:rw
+    command: /bin/bash -c "redis-server /usr/local/etc/redis/redis.conf"
+    networks:
+      - docker-net
+  docker-nginx:
+    container_name: docker-nginx
+    image: nginx:1.20.2
+    ports:
+      - "8082:8082"
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./docker/nginx/html/dist:/usr/share/nginx/html/dist
+      - ./docker/nginx/conf/nginx.conf:/etc/nginx/nginx.conf
+      - ./docker/nginx/logs:/var/log/nginx
+      - ./docker/nginx/conf.d:/etc/nginx/conf.d
+    depends_on:
+      - docker-go
+    networks:
+      - docker-net
+  docker-web:
+    container_name: docker-web
+    image: wangbinxingkong/fast
+    ports:
+      - "8081:8081"
+    volumes:
+      - ./docker/web/pc:/fast/static/pc
+      - ./docker/web/config.yaml:/fast/config.yaml
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - docker-net
+networks:
+  docker-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.254.0/24

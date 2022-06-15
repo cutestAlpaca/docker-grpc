@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+// 指定包名
+package grpc;
+option go_package = "../pb/";   //两个参数一个是生成地址，一个是包名
+//option go_package = "../;main";   //两个参数一个是生成地址，一个是包名
+
+service message {
+  rpc sayHello(Request) returns (Response);
+}
+
+// 定义消息体
+message Response {
+  int32  error = 1;              //1表示标识符，同一个message中不能重复
+  string ans = 2;
+}
+
+// 消息体嵌套
+message Request {
+  string name = 1;
+}
